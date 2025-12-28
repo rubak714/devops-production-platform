@@ -2,7 +2,8 @@
 
 URL=$1
 
-for i in {1..200}
+# Increase from 200 to 1000 requests
+for i in {1..1000}
 do
   curl $URL/work &
 done
