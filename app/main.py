@@ -13,6 +13,7 @@ def home():
 #     time.sleep(random.uniform(0.1, 0.5))
 #     return "Work done"
 
+# to trigger HPA
 @app.route("/work")
 def work():
     end = time.time() + 5  # burn CPU for 5 seconds
