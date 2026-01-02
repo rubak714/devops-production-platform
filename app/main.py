@@ -13,13 +13,13 @@ def home():
 #     time.sleep(random.uniform(0.1, 0.5))
 #     return "Work done"
 
+@app.route("/work")
 def work():
-    # heavier CPU task
-    total = 0
-    for i in range(10000000):
-        total += i % 5
-    time.sleep(random.uniform(0.1, 0.3))
-    return f"Work done {total}"
+    end = time.time() + 5  # burn CPU for 5 seconds
+    x = 0
+    while time.time() < end:
+        x += 1
+    return "Work done"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
