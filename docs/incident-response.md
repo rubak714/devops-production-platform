@@ -1,4 +1,4 @@
-## Incident Response
+## Incident Responses
 
 1. Alert received via monitoring
 2. Identify affected service
