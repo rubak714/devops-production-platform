@@ -16,3 +16,6 @@ Thumbs.db
 
 terraform.tfstate*
 .terraform/
+terraform/backend.tf
+terraform/.terraform.lock.hcl
+
