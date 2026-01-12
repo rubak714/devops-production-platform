@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: devops-app:latest
+        # image: devops-app:latest
+        image: gcr.io/plated-shelter-483316-q9/devops-app:latest
         ports:
         - containerPort: 5000
         resources:
